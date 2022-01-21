@@ -140,22 +140,77 @@ a {
 /* Head */
 
 .head {
+  padding-top: 122px;
   display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto 1fr;
   background-color: var(--basic-background-dark);
 }
 
-.head-title {
-
+.head-image {
+  width: 900px;
+  grid-row: 1 / 3;
+  display: grid;
+  background: center no-repeat url("../img/head-formula.png");
 }
+
+.head-foto {
+  padding-left: 63px;
+}
+
+.head-formula {
+  position: fixed;
+}
+
+.head-title {
+  padding-left: 28px;
+}
+
+.head p {
+  padding: 60px 150px 60px 40px;
+}
+
+/* Filter */
+
+.filter {
+  min-height: 138px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: center no-repeat url("../img/filter.png");
+}
+
+.filter-button {
+  width: 400px;
+  padding: 13px 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+  text-align: center;
+  vertical-align: middle;
+  background-color: #ffae00;
+  border: 1px solid #ffae00;
+  box-sizing: border-box;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
 
 /* Catalog */
 
+.catalog {
+  padding: 50px 0;
+  display: grid;
+}
+
 .catalog-list {
-  margin: 27px 0;
+  /* margin: 0 auto; */
   padding: 0 116px;
+  padding-bottom: 70px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  
+  /* outline: 1px solid red; */
 }
 
 .card-item {
@@ -165,12 +220,19 @@ a {
   /* padding: 10px; */
   display: flex;
   flex-direction: column;
-  text-align: start;
-  
+  /* text-align: start; */
+  /* outline: 1px solid red; */
 }
 
-.card-item:nth-child(3n) {
+/* .card-item:nth-child(3n) {
   margin-right: 0;
+} */
+
+.visual-rating {
+  width: 27px;
+  padding: 10px;
+  align-self: flex-end;
+  position: absolute;
 }
 
 .card-item a {
@@ -188,10 +250,6 @@ a {
 .game-header {
   display: flex;
   flex-direction: column;
-}
-
-.visual-rating {
-  width: 27px;
 }
 
 .game-title {
@@ -224,7 +282,7 @@ a {
 }
 
 .navigation-buttons .button {
-
+  width: 250px;
 }
               
 /* New games */
