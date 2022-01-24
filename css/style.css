@@ -48,7 +48,9 @@ a {
 }
 
 .button {
-  padding: 3px 5px;
+  width: 250px;
+  padding: 13px 5px;
+  margin: 0 5px;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
@@ -206,15 +208,17 @@ a {
 
 .catalog {
   margin-top: 3px;
-  padding: 25px 0;
+  padding: 25px 0 75px;
   display: grid;
+  justify-items: center;
   background-color: var(--background-grey);
 }
 
 .catalog-list {
   padding: 0 99px;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   /* outline: 1px solid red; */
 }
@@ -256,6 +260,7 @@ a {
 }
 
 .game-header {
+  padding-left: 4px;
   display: flex;
   flex-direction: column;
 }
@@ -267,12 +272,14 @@ a {
 
 .game-tags {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 21px;
   font-weight: 400;
   text-transform: lowercase;
 }
 
 .game-autor {
+  padding-left: 4px;
+  padding-top: 13px;
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
@@ -282,15 +289,14 @@ a {
 }
 
 .avatar {
-  grid-row: 1 / 3;
-  width: 50px;
-  padding-right: 10px;
-  border: 1px solid transparent;
-  border-radius: 50%;
+  /*  */
 }
 
-.navigation-buttons .button {
-  width: 250px;
+.game-autor p {
+  padding-left: 9px;
+}
+
+.navigation-buttons {
 }
               
 /* New games */
