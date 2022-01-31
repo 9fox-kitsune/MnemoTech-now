@@ -166,6 +166,7 @@ a {
 /* Head */
 
 .head {
+  min-height: 486px;
   padding-top: 133px;
   display: grid;
   grid-template-columns: auto auto;
@@ -207,18 +208,27 @@ a {
 
 .filter {
   min-height: 138px;
+  padding: 0 116px;
   display: grid;
   grid-template-columns: max-content auto max-content;
   align-items: center;
-  /* background: center no-repeat url("../img/filter.png"); */
   background-color: var(--special-grey);
+}
+
+.filter-text {
+  display: grid;
+}
+
+.filter-text .number-of-games {
+  font-size: 21px;
+  line-height: 29px;
 }
 
 .filter-button {
   width: 394px;
   margin-top: 6px;
-  margin-left: 9px;
-  padding: 8px 15px;
+  margin-left: 110px;
+  padding: 9px 15px;
   font-weight: 600;
   font-size: 21px;
   line-height: 29px;
@@ -230,6 +240,28 @@ a {
   box-sizing: border-box;
   border-radius: 60px;
   cursor: pointer;
+}
+
+.sorting-options {
+  display: grid;
+  justify-items: flex-end;
+}
+
+.sorting-options P {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.how-to-sort {
+
+}
+
+.how-to-sort img {
+
+}
+
+.how-to-sort .sorting-versions {
+  
 }
 
 /* Catalog */
