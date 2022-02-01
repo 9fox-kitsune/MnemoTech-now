@@ -34,6 +34,7 @@ p {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 ul {
@@ -103,12 +104,10 @@ a {
 .wrapper-standard {
   text-align: start;
   display: grid;
-  /* outline: 1px solid red; */
 }
 
 .page-title {
   padding: 30px 0 10px;
-  /* outline: 1px solid red; */
 }
 
 .wrapper-standard h2 {
@@ -119,7 +118,6 @@ a {
   font-weight: 400;
   text-transform: uppercase;
   text-align: start;
-  /* outline: 1px solid red; */
 }
 
 
@@ -211,30 +209,37 @@ a {
   padding: 0 116px;
   display: grid;
   grid-template-columns: max-content auto max-content;
-  align-items: center;
   background-color: var(--special-grey);
 }
 
 .filter-text {
-  display: grid;
+  padding-top: 43px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-text p {
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .filter-text .number-of-games {
-  font-size: 21px;
-  line-height: 29px;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 .filter-button {
   width: 394px;
-  margin-top: 6px;
-  margin-left: 110px;
+  margin-top: 8px;
+  margin-left: 114px;
   padding: 9px 15px;
-  font-weight: 600;
-  font-size: 21px;
-  line-height: 29px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
   color: var(--basic-white);
   text-align: center;
   vertical-align: middle;
+  align-self: center;
   background-color: var(--basic-orange);
   border: 2px solid var(--special-orange);
   box-sizing: border-box;
@@ -243,25 +248,43 @@ a {
 }
 
 .sorting-options {
-  display: grid;
-  justify-items: flex-end;
+  padding-top: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .sorting-options P {
+  padding-bottom: 3px;
   font-size: 14px;
   line-height: 16px;
 }
 
 .how-to-sort {
-
+  margin-top: 4px;
+  display: flex;
 }
 
 .how-to-sort img {
-
+  margin-right: 2px;
+  padding: 5px 8px 5px 13px;
+  background-color: var(--basic-black-light);
+  border: 1px solid var(--basic-black-light);
+  box-sizing: border-box;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
 }
 
 .how-to-sort .sorting-versions {
-  
+  padding: 5px 28px 5px 10px;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--basic-white);
+  background-color: var(--basic-black-light);
+  border: 1px solid var(--basic-black-light);
+  box-sizing: border-box;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
 }
 
 /* Catalog */
@@ -285,7 +308,6 @@ a {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  /* outline: 1px solid red; */
 }
 
 .card-item:nth-child(odd) {
@@ -310,6 +332,8 @@ a {
 
 .game-image {
   width: 184px;
+  height: 184px;
+  overflow: hidden;
   margin-bottom: 18px;
   border: 1px solid transparent;
   border-radius: 15px;
