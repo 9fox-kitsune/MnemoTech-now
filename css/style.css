@@ -51,7 +51,6 @@ a {
 .button {
   width: 250px;
   padding: 9px 5px;
-  margin: 0 5px;
   font-family: 'Nunito Sans', Arial, sans-serif;
   font-style: normal;
   font-size: 16px;
@@ -112,14 +111,22 @@ a {
 
 .wrapper-standard h2 {
   margin: 0;
-  padding: 18px 116px;
-  font-size: 38px;
-  line-height: 40px;
+  padding: 0 16px;
+  font-size: 42px;
+  line-height: 46px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: start;
 }
 
+.back-color-section {
+  padding: 0 99px;
+  background-color: var(--background-yellow);
+}
+
+.button-more {
+  margin: 70px 5px 51px 5px;
+}
 
 /*** HEADER ***/
 
@@ -291,14 +298,12 @@ a {
 
 .catalog {
   margin-top: 3px;
-  padding: 25px 0 75px;
+  padding: 25px 99px;
   display: grid;
   background-color: var(--background-grey);
 }
 
 .catalog-list {
-  padding: 0 99px;
-  padding-bottom: 70px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -377,18 +382,20 @@ a {
 .game-autor p {
   padding-left: 9px;
 }
+
+.catalog button {
+  
+}
               
 /* New games */
 
 .new-games {
-  padding: 70px 0;
   display: grid;
 }
 
 /* Favourites games */
 
 .favourites-games {
-  padding: 10px 0;
   display: grid;
 }
 
