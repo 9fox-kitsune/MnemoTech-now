@@ -153,7 +153,8 @@ a {
 
 .column-menu {
   margin-right: 23px;
-  padding: 0 20px;
+  padding: 0 19px;
+  font-weight: 600;
 }
 
 .user-navigation {
@@ -205,7 +206,8 @@ a {
 
 .head p {
   padding: 67px 100px 60px 80px;
-  font-size: 19px;
+  font-weight: 300;
+  font-size: 20px;
   line-height: 34px;
 }
 
@@ -330,14 +332,14 @@ a {
   position: absolute;
 }
 
-.card-item a {
+.game-header {
   display: flex;
   flex-direction: column;
 }
 
 .game-image {
-  width: 184px;
-  height: 184px;
+  width: 183px;
+  height: 183px;
   overflow: hidden;
   margin-bottom: 18px;
   border: 1px solid transparent;
@@ -346,18 +348,14 @@ a {
   background-color: var(--background-dark);
 }
 
-.game-header {
-  padding-left: 4px;
-  display: flex;
-  flex-direction: column;
-}
-
 .game-title {
+  padding-left: 4px;
   font-size: 16px;
   line-height: 21px;
 }
 
 .game-tags {
+  padding-left: 4px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
