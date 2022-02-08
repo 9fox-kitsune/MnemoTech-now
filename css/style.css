@@ -112,6 +112,7 @@ a {
 .wrapper-standard h2 {
   margin: 0;
   padding: 0 16px;
+  padding-bottom: 15px;
   font-size: 42px;
   line-height: 46px;
   font-weight: 400;
@@ -119,9 +120,14 @@ a {
   text-align: start;
 }
 
-.back-color-section {
+.back-section {
   padding: 0 99px;
+  padding-top: 18px;
   background-color: var(--background-yellow);
+}
+
+.back-section .game-image {
+  background-color: var(--basic-white);
 }
 
 .button-more {
@@ -313,8 +319,10 @@ a {
 
 .card-item {
   padding: 15px;
+  width: 183px;
   display: flex;
   flex-direction: column;
+  /* outline: 1px solid red; */
 }
 
 .card-item:nth-child(odd) {
@@ -323,6 +331,12 @@ a {
 
 .card-item:nth-child(even) {
   background: left 125px no-repeat url("../img/background/grey-points.png");
+}
+
+.card-item p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .visual-rating {
@@ -338,10 +352,12 @@ a {
 }
 
 .game-image {
-  width: 183px;
   height: 183px;
   overflow: hidden;
   margin-bottom: 18px;
+  display: grid;
+  justify-items: center;
+  align-content: flex-end;
   border: 1px solid transparent;
   border-radius: 15px;
   object-fit: contain;
@@ -352,13 +368,15 @@ a {
   padding-left: 4px;
   font-size: 16px;
   line-height: 21px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .game-tags {
   padding-left: 4px;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
   text-transform: lowercase;
 }
 
@@ -379,6 +397,8 @@ a {
 
 .game-autor p {
   padding-left: 9px;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .catalog button {
@@ -388,6 +408,7 @@ a {
 /* New games */
 
 .new-games {
+  padding-top: 83px;
   display: grid;
 }
 
