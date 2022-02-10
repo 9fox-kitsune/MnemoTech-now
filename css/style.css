@@ -422,20 +422,14 @@ a {
   text-align: start;
 }
 
-.navigation-buttons button {
-  width: 66%;
-  margin-right: 10px;
-}
-
-.navigation-buttons a {
-  width: 33%;
+.favourites-games .button-more {
+  margin-bottom: 100px;
 }
 
 /*** FOOTER ***/
 
 .footer {
   text-align: start;
-
 }
 
 /* First footer */
